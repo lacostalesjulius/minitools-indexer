@@ -17,5 +17,5 @@ Front-end + gate proxying of server-side services. Checking of health of service
 - Services must use '/heartbeat' of the gate if they are in the same local server; or 
 - Services must use '/api/heartbeat' on the expose NGINX server if not.
 - Use the Function on './models/aggregator.js' to see the json contract needed to announce online status.
-- After which, the gate will reverse proxy any request it recieves on '/api/[service id]/' on that service.
+- After which, the gate will reverse proxy any request it receives on '/api/[service id]/' on that service.
 - The frontend for that service must still be made.
