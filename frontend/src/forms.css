@@ -1,0 +1,201 @@
+.service-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-md);
+
+  background: var(--white);
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+
+  margin: var(--space-sm);
+  padding: var(--space-md);
+}
+
+.service-form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--space-xs);
+  gap: var(--space-xs);
+  border-radius: var(--border-radius);
+  font-weight: 800;
+}
+  
+.service-form-field-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: var(--space-xs);
+  gap: var(--space-xs);
+  border-radius: var(--border-radius);
+  font-weight: 800;
+  align-content: center;
+  align-items: center;
+}
+
+.service-form-field-row.no-fill {
+  flex: 0;
+}
+
+.service-form-field.no-fill {
+  flex: 0;
+}
+
+.service-form-label {
+  font-size: 12px;
+  color: var(--text-dark);
+}
+
+.service-form-property {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.service-input {
+  height: var(--input-height);
+
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+
+  padding: 0 10px;
+  outline: none;
+}
+
+.service-input:focus {
+  border: 2px solid var(--green-primary);
+}
+
+/* select */
+.service-select {
+  height: var(--input-height);
+
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+
+  padding: 0 10px;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.service-select:focus {
+  border: 2px solid var(--green-primary);
+}
+
+/* checkbox */
+.service-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.service-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px;
+
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+
+  font-size: 13px;
+}
+
+.service-option input {
+  accent-color: var(--green-primary);
+}
+
+.service-button-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.service-button {
+  flex: 1;
+  padding: var(--space-sm);
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  color: white;
+  cursor: pointer;
+
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+
+.service-button:active {
+  transform: translateY(2px);
+}
+
+.service-button-submit {
+  background: var(--green-primary);
+}
+
+.service-button-clear {
+  background: #f9a825;
+  color: #1a1a1a;
+}
+
+.service-button-download {
+  background: var(--green-dark);
+}
+
+/* progress */
+.service-progress {
+  height: 8px;
+
+  background: var(--green-light);
+  border-radius: var(--border-radius);
+
+  overflow: hidden;
+}
+
+.service-progress-bar {
+  height: 100%;
+  width: 55%;
+  background: var(--green-primary);
+
+  transition: width 0.2s ease;
+}
+
+
+.service-thumb {
+  width: 40%;
+  aspect-ratio: 3/2;
+  background: var(--green-light);
+  border-radius: var(--border-radius);
+}
+
+
+/* Specific CSS */
+
+.service-form-field .warning {
+  background: var(--status-warning);
+  color: white;
+}
+.service-form-field-row.warning {
+  background: var(--status-warning);
+  color: white;
+}
+
+.service-button-download.downloading {
+  background: gray;;
+}
+
+.service-form-label.warning {
+  background: var(--status-warning);
+  padding: var(--space-sm);
+  color: black;
+  border-radius: var(--border-radius);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.service-form-label.hidden {
+  display: none;
+}
+
+

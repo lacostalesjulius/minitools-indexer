@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke="black" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+
+  <rect x="0" y="0" width="24" height="24" fill="#2f7d3200"/>
+
+  <!-- roof -->
+  <path d="M4 11L12 4L20 11" stroke-width="2"/>
+
+  <!-- house body -->
+  <path d="M6 10.5V20H18V10.5" stroke-width="2"/>
+
+</svg>

@@ -1,0 +1,112 @@
+/* ------------- */
+/* Head and Logo */
+/* ------------- */
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--green-primary);
+  color: var(--white);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-svg {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------ */
+/* Main Sections (Home, Services, Content, Logs, Options) */
+/* ------------------------------------------------------ */
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+}
+
+.main-section {
+  flex: 0 0 0%;  overflow: hidden;
+  border: 0px solid var(--green-primary);
+  background-color: var(--bg-main);
+}
+
+.main-section.active {
+  flex: 1;     
+  border: 2px solid var(--green-primary);
+}
+
+
+/* ------------------- */
+/* Bottom Dock Buttons */
+/* ------------------- */
+.dock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--green-primary);
+  padding: var(--small-padding) var(--padding);
+  gap: 2px;
+}
+
+.button-div {
+  flex: 1;
+  background-color: var(--green-primary);
+  color: var(--white);
+  text-align: center;
+  padding: var(--padding);
+  border-radius: var(--large-border-radius);
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.button-div:hover {
+  transform: translateY(-6px);
+  background-color: var(--green-light);
+}
+
+.button-div.active {
+  transform: translateY(-18px);  
+  background-color: var(--bg-main);
+  color: var(--green-primary);
+}
+
+/* ------------------------------------- */
+/* Responsive / Mobile first adjustments */
+/* ------------------------------------- */
+@media (max-width: 768px) {
+  .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--green-primary);
+    color: var(--white);
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .main-section.active {
+    flex: 1 1 100%;
+    border: 2px solid var(--green-primary);
+  }
+
+  .dock {
+    flex-direction: row;
+  }
+}

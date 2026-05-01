@@ -1,0 +1,23 @@
+{
+  "name": "minitools",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Mark",
+  "type": "module",
+  "scripts": {
+    "dev:frontend" : "nodemon --watch frontend --ext js,css,json --exec 'node frontend/index.js'",
+    "dev:gate" : "nodemon --watch gate --ext js --exec 'node gate/service.js'",
+    "dev:media": "nodemon --watch '$HOME/yt-dlp' --ext js --exec 'node ~/yt-dlp/ytdlp.js'"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^4.22.1",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

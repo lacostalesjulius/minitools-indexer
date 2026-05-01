@@ -1,0 +1,57 @@
+:root {
+  --bg-main: #f3faf5; 
+  --green-primary: #2f7d32; 
+  --green-dark: #1b5e20; 
+  --green-light: #a5d6a7; 
+  --white: #ffffff; 
+  --text-dark: #1a1a1a; 
+  --status-offline: #9e9e9e;
+  --status-warning: #f9a825;
+  --status-error: #c62828;
+
+  --max-width: 1200px; 
+  --padding: 16px; 
+  --small-padding: 2px; 
+  --margin: 0; 
+  --large-border-radius: 1rem;
+
+  --border-radius: 6px;
+  --input-height: 36px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  max-width: 1080px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
